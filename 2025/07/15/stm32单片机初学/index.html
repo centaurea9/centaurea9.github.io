@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="zh-cn" theme-mode="dark-only"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>stm32单片机初学 | 鱼の屋</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":false,"activeHolder":"Type Here","blurHolder":"Search","noResult":"空空如也"},"code":{"codeInfo":"$0 - $1 行","copy":"复制"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link rel="stylesheet" href="//unpkg.com/@waline/client@v3/dist/waline.css"><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><style defer src="/css/custom.css"></style><link rel="stylesheet" href="/css/custom.css"><script>document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://photos.centaurea.top/PicGo/background1.jpg');
+ --light-background: url('https://photos.centaurea.top/PicGo/background1.jpg');
+ --theme-encrypt-confirm: '确认'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async type="module">import { init } from '//unpkg.com/@waline/client@v3/dist/waline.js';
+window.waline = init;
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: 'https://waline-zhh.netlify.app/.netlify/functions/comment',
+   path: window.location.pathname,
+ });document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: 'https://waline-zhh.netlify.app/.netlify/functions/comment',
+   path: window.location.pathname,
+ });document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/Connections/"><span class="navItemTitle">Connections</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>stm32单片机初学</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2025-07-15T15:44:32.000Z" id="date"> 2025-07-15</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2025-08-11T15:49:09.269Z" id="updated"> 2025-08-11</time></div></span><br><span>文章总字数: <div class="control">317</div></span></div></div><hr><div id="post-content"><h2 id="购买stm32单片机"><a href="#购买stm32单片机" class="headerlink" title="购买stm32单片机"></a>购买stm32单片机</h2><p>最近想找实习了，但发现自己没有一个项目能拿上简历的，于是想要学习stm32进行简历美化，于是打算先初学一下。<br>买的是江科大同款的单片机，也是跟着江科大的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1th411z7sn">stm32视频</a>跟着先学了。<br>到货花了两天时间。</p>
+<h2 id="初学stm32"><a href="#初学stm32" class="headerlink" title="初学stm32"></a>初学stm32</h2><p>初始的部分是不难的，看看即可，我初略的看了下一二节。<br>软件安装的话就是配置环境，我之前是学过C51单片机的，于是很多部分我早已完成，也没有环境配置问题。<br>到了项目模板这里我倒是卡了一个小时，主要是将单片机跟ST-Link连接后与我的电脑连接出了问题，会出现no target connected。<br>最终解决的是发现了自己的接线出了问题，这个问题相当容易忽略！！！在视频中ST-Link的接线口是跟买到的不一样的！<br>我的: <img src="https://photos.centaurea.top/PicGo/stm32_1.jpg"><br>教学视频的: <img src="https://photos.centaurea.top/PicGo/stm32_2.png"><br>我当时没有仔细看，浪费了一个小时，差点就要刚开始就结束了。<br>自己现在了解了遇到单片机问题必须要先查一些接线问题好吧！真的坏我事情。🥲🥲🥲</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2025/07/21/%E4%B8%83%E6%9C%88%E4%BA%8C%E5%8D%81%E4%B8%80%E6%97%A5%E6%89%80%E6%83%B3/">← 下一篇 七月二十一日所想</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2025/07/06/7-6%E6%B8%B8%E8%AE%B0/">永庆坊游记 上一篇 →</a></div></div></div><div id="comments"><div id="waline"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a></div></div></article><aside><div id="about"><a href="/about/" id="logo"><img src="https://photos.centaurea.top/PicGo/logo1.jpg" alt="Logo" style="margin:0;border-radius:50%;"></a><!--h1#Dra(href= theme.aside.dr)= config.author--><div id="description"><p></p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/centaurea9"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" href="mailto:centuarea1016@gmail.com"><i class="fa fa-envelope" alt="E-Mail"></i></a><a class="social" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa fa-train-subway" alt="travelling"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AD%E4%B9%B0stm32%E5%8D%95%E7%89%87%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">购买stm32单片机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%AD%A6stm32"><span class="toc-number">2.</span> <span class="toc-text">初学stm32</span></a></li></ol></div></div><footer><!-- 自定义footer内容--><nobr>© 2025 鱼 - 个人博客</nobr><wbr><nobr>感谢访问，欢迎交流！</nobr><wbr><nobr>更多请看<a href="/about/">关于页</a></nobr><wbr><nobr><a href="https://icp.gov.moe/?keyword=20251016" target="_blank">萌ICP备20251016号</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
