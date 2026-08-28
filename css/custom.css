@@ -1,0 +1,124 @@
+
+#logo img {
+  /* 
+   * transition 属性是关键！
+   * 它告诉浏览器，当 transform 属性发生变化时，
+   * 这个变化过程要在 0.6 秒内平滑地完成，
+   * ease-in-out 是一种缓动效果，让动画看起来更自然。
+   */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* 当鼠标悬停在 logo 容器上时 */
+#logo:hover img {
+  /* 
+   * 让图片以自身为中心，旋转 360 度（一整圈）。
+   */
+  transform: rotate(360deg);
+}
+/* -- 强制修改 footer 和社交链接的样式 (V2) -- */
+
+/* 
+ * 我们通过 `body` 标签来增加选择器的权重，
+ * 这比单独的 `aside footer` 优先级要高。
+ */
+body aside footer {
+  color: #000000 !important;
+  /*padding: 50px 50px 50px 3px !important;*/
+   padding: 0 !important;
+  border-top: 1px solid #211758 !important;
+}
+
+/* 
+ * 同样，为 social-links 也使用更具体的选择器
+ */
+body aside footer #social-links {
+  /* 
+   * margin: 上 右 下 左
+   * 顶部留 20px 间距，让它离上面的线有一点距离。
+   * 左右 auto 可以让它居中（如果它的父容器是 flex 布局）。
+   * 底部留 20px 间距，让它和下面的版权文字分开。
+   */
+ text-align: left !important;
+  margin: 0px 147px 0px 0px !important;
+}
+
+body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
+  display: block; /* 让 nobr 表现得像一个块级元素，可以设置边距 */
+  padding: 2px 15px !important; /* 给每一行版权信息一点左右的内边距 */
+}
+
+@media (min-width: 769px) {
+    article {
+        width: calc(95% - 212px);
+    }
+}
+
+/* 屏幕宽度大于等于 1024px 时应用 (会覆盖上面的规则) */
+@media (min-width: 1024px) {
+    article {
+        width: calc(100% - 500px);
+    }
+}
+
+/* 屏幕宽度大于等于 1440px 时应用 (会覆盖上面所有的规则) */
+@media (min-width: 1440px) {
+    article {
+        width: calc(100% - 600px);
+    }
+  }
+
+  /* 移除首页文章列表的卡片框线样式 - 已注释，新样式在文件底部 */
+/*
+.recent-post {
+  border: none !important;      /* 移除所有边框 
+  box-shadow: none !important; /* 移除所有阴影（很多“框”的效果是阴影）
+  background: transparent !important;  将背景设置为透明，防止留下一个纯色块 
+ }
+ */
+ 
+
+:root[theme-mode=dark] {
+    --theme-highlight: #2fe6ff!important; 
+    --theme-border: rgb(88 120 147);
+}
+.recent-post time {
+    color: #ffffff;
+}
+#total {
+    background: transparent !important;
+}
+/*
+文章上方颜色#2fe6ff
+时间颜色#ffffff
+*/
+
+/* 重新定义文章卡片的悬停效果 */
+.recent-post {
+  border: 1px solid transparent !important;      /* 设置透明边框，为悬停效果做准备 */
+  box-shadow: none !important; /* 移除默认阴影 */
+  background: rgba(255, 255, 255, 0.05) !important; /* 设置半透明背景 */
+  border-radius: 8px !important; /* 添加圆角 */
+  transition: all 0.3s ease !important; /* 添加过渡动画 */
+}
+
+/* 鼠标悬停时的效果 */
+.recent-post:hover {
+  border: 1px solid #2fe6ff !important; /* 悬停时显示青色边框 */
+  background: rgba(47, 230, 255, 0.1) !important; /* 悬停时背景变为青色半透明 */
+  box-shadow: 0 4px 15px rgba(47, 230, 255, 0.3) !important; /* 添加青色发光效果 */
+  transform: translateY(-2px) !important; /* 轻微上移效果 */
+}
+
+/*
+ * 设置文章内容区域的所有图片样式
+ */
+#post-bg img {
+   max-height: 80vh; /* 最大高度为屏幕的75% */
+  width: auto;      /* 宽度自动调整以保持比例 */
+  display: block;   /* 确保可以设置 margin */
+  margin-left: auto;  /* 配合下一行实现居中 */
+  margin-right: auto; /* 配合上一行实现居中 */
+  border-radius: 8px; /* 给所有图片加上圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 加一点阴影，更有质感 */
+}
