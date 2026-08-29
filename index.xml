@@ -6,47 +6,53 @@
       <description>Last 10 notes on Centaurea_Blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>daily</title>
-    <link>https://centaurea.top/daily/</link>
-    <guid>https://centaurea.top/daily/</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
-  </item><item>
     <title>hexo_blog</title>
     <link>https://centaurea.top/posts/hexo_blog/</link>
     <guid>https://centaurea.top/posts/hexo_blog/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
   </item><item>
     <title>posts</title>
     <link>https://centaurea.top/posts/</link>
     <guid>https://centaurea.top/posts/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
   </item><item>
     <title>stm32</title>
     <link>https://centaurea.top/posts/stm32/</link>
     <guid>https://centaurea.top/posts/stm32/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
   </item><item>
     <title>月志</title>
     <link>https://centaurea.top/posts/%E6%9C%88%E5%BF%97/</link>
     <guid>https://centaurea.top/posts/%E6%9C%88%E5%BF%97/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
   </item><item>
     <title>生活随笔</title>
     <link>https://centaurea.top/posts/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</link>
     <guid>https://centaurea.top/posts/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
   </item><item>
     <title>标签索引</title>
     <link>https://centaurea.top/tags/</link>
     <guid>https://centaurea.top/tags/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 28 Aug 2026 15:51:56 GMT</pubDate>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
+  </item><item>
+    <title>daily</title>
+    <link>https://centaurea.top/daily/</link>
+    <guid>https://centaurea.top/daily/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 29 Aug 2026 15:30:24 GMT</pubDate>
+  </item><item>
+    <title>2026-08-29</title>
+    <link>https://centaurea.top/daily/2026-08-29</link>
+    <guid>https://centaurea.top/daily/2026-08-29</guid>
+    <description><![CDATA[ 昨天：2026-08-28 14:30 自动记录 23:30 自动记录. ]]></description>
+    <pubDate>Sat, 29 Aug 2026 15:30:02 GMT</pubDate>
   </item><item>
     <title>2026-08-28</title>
     <link>https://centaurea.top/daily/2026-08-28</link>
@@ -59,12 +65,6 @@
     <guid>https://centaurea.top/</guid>
     <description><![CDATA[ 关于我 本人建立博客还是受到了舍友的影响，看他做的挺有意思，我就想着自己也搞一个玩玩，在2024年根据网上的教程成功建立了自己的博客，但后面因为学车就荒废了。2025年有重新开始，说实话一年过去了我啥都忘记了说是，感谢朋友的帮忙，给我的搭建之路提供了很多的帮助。 ·本人就读于广州大学，目前是一名大三的菜鸡（是真滴菜） ·个人兴趣爱好并不多，一喜欢听歌，二喜欢游戏，三喜欢折腾些乱七八糟的 ·很喜欢明日方舟，所以用了这个主题为模板 -更新于2025.6.29- 。。。 -更新于2026.8.28- 关于本站 总感觉鱼是一种特别无所事事的动物，在头脑发呆的时候就想像条鱼一样，鱼の屋大概就是这样想出来... ]]></description>
     <pubDate>Fri, 28 Aug 2026 15:09:42 GMT</pubDate>
-  </item><item>
-    <title>主题覆盖问题</title>
-    <link>https://centaurea.top/posts/hexo_blog/%E4%B8%BB%E9%A2%98%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98</link>
-    <guid>https://centaurea.top/posts/hexo_blog/%E4%B8%BB%E9%A2%98%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98</guid>
-    <description><![CDATA[ 一开始使用主题我跟着arknights中的readme教程走，但我发现我上传源码编译后是有问题的 我使用的是submoudle的子模块方式，将这个主题项目视为我的子模块，然后自己就无需修改这个主题，直接使用即可 但后面我想要修改这个主题，使他更加个性化，这时候问题就出现了，我无法直接修改themes中主题的配置!(因为他是直接拉取github上的项目，而这我是无法上传到github上作为源码的) 那么就有人会问，为什么不直接将主题中需要修改的文件拉到根目录创建对应的路径然后进行修改 这个方法我也尝试过了，结果不知道为什么我的根目录下的文件无法覆盖themes中主题的文件！我c，这hexo怎么这... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
